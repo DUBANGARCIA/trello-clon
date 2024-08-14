@@ -1,0 +1,5 @@
+
+mise install --yes;
+eval "$(mise env)";
+
+pnpm yarnhook;

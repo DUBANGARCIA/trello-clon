@@ -1,0 +1,4 @@
+[tools]
+nodejs = ['20.15.1', 'lts']
+pnpm = '9.6.0'
+shellcheck = "0.10.0"

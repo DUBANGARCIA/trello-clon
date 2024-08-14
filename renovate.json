@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["develop"],
+  "configMigration": true,
+  "dependencyDashboard": true,
+  "extends": [
+    ":rebaseStalePrs",
+    ":automergeRequireAllStatusChecks",
+    ":automergePr",
+    ":automergeMinor",
+    "config:best-practices",
+    "helpers:pinGitHubActionDigests",
+    "customManagers:biomeVersions",
+    "packages:postcss",
+    "mergeConfidence:all-badges",
+    "security:openssf-scorecard"
+  ],
+  "ignorePaths": ["**/node_modules/**"],
+  "postUpdateOptions": ["pnpmDedupe"],
+  "minimumReleaseAge": "3 days",
+  "rollbackPrs": true,
+  "semanticCommitScope": "workspace",
+  "semanticCommits": "enabled",
+  "timezone": "America/Chicago",
+  "schedule": "After 7am every weekday",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "Before 5pm on friday"
+  }
+}
