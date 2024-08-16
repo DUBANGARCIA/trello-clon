@@ -17,7 +17,7 @@
   ],
   "ignorePaths": ["**/node_modules/**"],
   "postUpdateOptions": ["pnpmDedupe"],
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "7 days",
   "rollbackPrs": true,
   "semanticCommitScope": "workspace",
   "semanticCommits": "enabled",
